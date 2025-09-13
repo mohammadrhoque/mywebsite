@@ -957,7 +957,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a Senior Data Engineer at G-Star Raw with over 4 years of experience in data engineering, 
+                        I'm a Senior Data Engineer at G-Star Raw with over <span id="years-experience"></span> years of experience in data engineering, 
                         ML-Ops, and analytics. I specialize in building scalable data systems, fraud detection, 
                         and multimedia forensics solutions that drive business value.
                     </p>
@@ -1535,6 +1535,22 @@
         
         // Start typing effect after loading
         setTimeout(typeWriter, 1500);
+
+        // Calculate years of experience dynamically
+        function calculateYearsExperience() {
+            const careerStartDate = new Date('2020-01-01');
+            const currentDate = new Date();
+            const yearsExperience = Math.floor((currentDate - careerStartDate) / (365.25 * 24 * 60 * 60 * 1000));
+            return yearsExperience;
+        }
+
+        // Update years of experience on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearsElement = document.getElementById('years-experience');
+            if (yearsElement) {
+                yearsElement.textContent = calculateYearsExperience();
+            }
+        });
     </script>
 </body>
 </html>
