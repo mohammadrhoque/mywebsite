@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rakibul Hoque - Software Engineer & Developer</title>
-    <meta name="description" content="Rakibul Hoque - Experienced Software Engineer specializing in modern web development, full-stack solutions, and innovative technology implementations.">
-    <meta name="keywords" content="Rakibul Hoque, Software Engineer, Web Developer, Full Stack Developer, JavaScript, React, Node.js, Python">
+    <title>Md. Rakibul Hoque - Senior Data Engineer & ML-Ops Specialist</title>
+    <meta name="description" content="Md. Rakibul Hoque - Senior Data Engineer at G-Star Raw specializing in data engineering, ML-Ops, fraud analytics, and multimedia forensics. BUET graduate with extensive experience in scalable data systems.">
+    <meta name="keywords" content="Rakibul Hoque, Data Engineer, ML-Ops, Machine Learning, Data Engineering, GCP, Python, Fraud Analytics, Multimedia Forensics, BUET">
     <meta name="author" content="Rakibul Hoque">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rakibulhoque.github.io/">
-    <meta property="og:title" content="Rakibul Hoque - Software Engineer & Developer">
-    <meta property="og:description" content="Experienced Software Engineer specializing in modern web development and full-stack solutions.">
+    <meta property="og:title" content="Md. Rakibul Hoque - Senior Data Engineer & ML-Ops Specialist">
+    <meta property="og:description" content="Senior Data Engineer at G-Star Raw specializing in data engineering, ML-Ops, fraud analytics, and multimedia forensics.">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://rakibulhoque.github.io/">
-    <meta property="twitter:title" content="Rakibul Hoque - Software Engineer & Developer">
-    <meta property="twitter:description" content="Experienced Software Engineer specializing in modern web development and full-stack solutions.">
+    <meta property="twitter:title" content="Md. Rakibul Hoque - Senior Data Engineer & ML-Ops Specialist">
+    <meta property="twitter:description" content="Senior Data Engineer at G-Star Raw specializing in data engineering, ML-Ops, fraud analytics, and multimedia forensics.">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
@@ -502,6 +502,142 @@
             color: var(--primary-dark);
         }
 
+        /* Education Section */
+        .education-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .education-item {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .education-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .education-header h3 {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin: 0;
+        }
+
+        .education-year {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .education-institution {
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-major {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .education-gpa {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Research Section */
+        .research-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .research-item {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .research-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .research-item h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .research-list, .awards-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .research-list li, .awards-list li {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            position: relative;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .research-list li::before, .awards-list li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .publication-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .publication-item {
+            background: var(--bg-primary);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .publication-item p {
+            margin-bottom: 0.5rem;
+        }
+
+        .publication-item p:first-child {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .publication-item p:nth-child(2) {
+            color: var(--text-secondary);
+        }
+
+        .publication-item p:last-child {
+            color: var(--text-light);
+            font-style: italic;
+        }
+
         /* Contact Section */
         .contact {
             background: var(--bg-secondary);
@@ -683,6 +819,24 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
+
+            .education-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .education-year {
+                align-self: flex-start;
+            }
+
+            .research-item {
+                padding: 1.5rem;
+            }
+
+            .publication-item {
+                padding: 1rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -753,6 +907,8 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
@@ -768,11 +924,12 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Hi, I'm Rakibul Hoque</h1>
-                <p class="subtitle">Software Engineer & Developer</p>
+                <h1>Hi, I'm Md. Rakibul Hoque</h1>
+                <p class="subtitle">Senior Data Engineer & ML-Ops Specialist</p>
                 <p class="description">
-                    Passionate about creating innovative solutions and building scalable applications. 
-                    I specialize in modern web development, full-stack solutions, and cutting-edge technologies.
+                    Dedicated to advancing impactful solutions in Data Engineering, with a focus on scalable data systems, 
+                    analytics, and emerging technologies. Currently working as Senior Data Engineer at G-Star Raw, 
+                    specializing in fraud analytics, forgery detection, and multimedia forensics.
                 </p>
                 <div class="cta-buttons">
                     <a href="#projects" class="btn btn-primary">
@@ -787,7 +944,7 @@
             </div>
             <div class="hero-image">
                 <div class="hero-image-placeholder">
-                    <i class="fas fa-user"></i>
+                    <img src="assets/RakibulPhoto.jpeg" alt="Rakibul Hoque" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
                 </div>
             </div>
         </div>
@@ -800,61 +957,71 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a dedicated software engineer with a passion for creating innovative solutions 
-                        that solve real-world problems. With expertise in modern web technologies and 
-                        full-stack development, I bring ideas to life through clean, efficient code.
+                        I'm a Senior Data Engineer at G-Star Raw with over 4 years of experience in data engineering, 
+                        ML-Ops, and analytics. I specialize in building scalable data systems, fraud detection, 
+                        and multimedia forensics solutions that drive business value.
                     </p>
                     <p>
-                        My journey in software development has been driven by curiosity and a desire to 
-                        continuously learn and grow. I enjoy working on challenging projects that push 
-                        the boundaries of what's possible with technology.
+                        My expertise spans across data engineering platforms, machine learning operations, and 
+                        infrastructure design. I've architected and maintained data warehouses, ML platforms, 
+                        and orchestration systems at companies like Pathao Limited and 10MinuteSchool.
                     </p>
                     <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to 
-                        open-source projects, or sharing knowledge with the developer community.
+                        I hold a BS in Electrical and Electronic Engineering from BUET with a focus on communication 
+                        and signal processing. My research background includes camera model identification for 
+                        digital forensics and lung tumor segmentation using deep learning techniques.
+                    </p>
+                    <p>
+                        I'm passionate about mentoring teams and contributing to innovative projects that leverage 
+                        data for strategic insights. When not working, I enjoy exploring emerging technologies 
+                        in data science and contributing to the research community.
                     </p>
                 </div>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Frontend</h3>
+                        <h3><i class="fas fa-database"></i> Data Engineering</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Vue.js</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">BigQuery</span>
+                            <span class="skill-tag">Airflow</span>
+                            <span class="skill-tag">DBT</span>
+                            <span class="skill-tag">Airbyte</span>
+                            <span class="skill-tag">Terraform</span>
+                            <span class="skill-tag">Apache Beam</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <h3><i class="fas fa-brain"></i> ML & Analytics</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">Node.js</span>
                             <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Express</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">REST APIs</span>
-                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">MLflow</span>
+                            <span class="skill-tag">Kedro</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">Scikit-learn</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Database</h3>
+                        <h3><i class="fas fa-server"></i> Databases & Storage</h3>
                         <div class="skill-tags">
-                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">BigQuery</span>
+                            <span class="skill-tag">MSSQL</span>
+                            <span class="skill-tag">InfluxDB</span>
                             <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">MySQL</span>
                             <span class="skill-tag">Redis</span>
-                            <span class="skill-tag">Firebase</span>
+                            <span class="skill-tag">Data Warehousing</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h3><i class="fas fa-cloud"></i> DevOps</h3>
+                        <h3><i class="fas fa-cloud"></i> Cloud & Infrastructure</h3>
                         <div class="skill-tags">
+                            <span class="skill-tag">GCP</span>
                             <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Terraform</span>
                             <span class="skill-tag">Git</span>
                             <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">Linux</span>
                         </div>
                     </div>
                 </div>
@@ -868,49 +1035,51 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fab fa-js-square"></i> JavaScript Ecosystem</h3>
+                    <h3><i class="fas fa-chart-line"></i> Data Analytics & ML</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">ES6+</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express</span>
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">Nuxt.js</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fab fa-python"></i> Python & Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python 3</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Flask</span>
-                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Python</span>
                         <span class="skill-tag">Pandas</span>
                         <span class="skill-tag">NumPy</span>
                         <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Signal Processing</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-mobile-alt"></i> Mobile Development</h3>
+                    <h3><i class="fas fa-cogs"></i> ML-Ops & Orchestration</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">React Native</span>
-                        <span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">Ionic</span>
-                        <span class="skill-tag">PWA</span>
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">Kedro</span>
+                        <span class="skill-tag">Airflow</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">MLServer</span>
+                        <span class="skill-tag">Model Deployment</span>
+                        <span class="skill-tag">ML Pipelines</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <h3><i class="fas fa-shield-alt"></i> Fraud Detection & Forensics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Fraud Analytics</span>
+                        <span class="skill-tag">Digital Forensics</span>
+                        <span class="skill-tag">Multimedia Forensics</span>
+                        <span class="skill-tag">Camera Model ID</span>
+                        <span class="skill-tag">Forgery Detection</span>
+                        <span class="skill-tag">Behavior Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Development & Infrastructure</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Terraform</span>
                         <span class="skill-tag">GCP</span>
-                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">BigQuery</span>
+                        <span class="skill-tag">DBT</span>
+                        <span class="skill-tag">Airbyte</span>
                     </div>
                 </div>
             </div>
@@ -924,28 +1093,25 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-database"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <h3 class="project-title">DATA-OPS Infrastructure</h3>
                         <p class="project-description">
-                            A full-stack e-commerce solution built with React, Node.js, and MongoDB. 
-                            Features include user authentication, payment processing, and admin dashboard.
+                            Currently the owner and maintainer of G-Star Raw's data infrastructure project. 
+                            Creating and managing infrastructure in GCP using Terraform, Airflow, Airbyte, Python, DBT, and Dataform.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">Airflow</span>
+                            <span class="tech-tag">Airbyte</span>
+                            <span class="tech-tag">DBT</span>
+                            <span class="tech-tag">GCP</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>
-                                Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
+                                <i class="fas fa-info-circle"></i>
+                                Current Project
                             </a>
                         </div>
                     </div>
@@ -953,28 +1119,25 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-brain"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <h3 class="project-title">ML Platform & Data Engineering</h3>
                         <p class="project-description">
-                            A real-time analytics dashboard with data visualization capabilities. 
-                            Built with Vue.js and Python backend for processing large datasets.
+                            Co-architected and owned Pathao's ML platform and data engineering infrastructure. 
+                            Built ELT-based data warehouse architecture and ML lifecycle management with Kedro, MLflow, and MLServer.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Kedro</span>
+                            <span class="tech-tag">MLflow</span>
+                            <span class="tech-tag">MLServer</span>
+                            <span class="tech-tag">BigQuery</span>
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">PostgreSQL</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>
-                                Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
+                                <i class="fas fa-info-circle"></i>
+                                Pathao Limited
                             </a>
                         </div>
                     </div>
@@ -982,31 +1145,143 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-shield-alt"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Mobile Task Manager</h3>
+                        <h3 class="project-title">Fraud Behavior Investigation</h3>
                         <p class="project-description">
-                            A cross-platform mobile app for task management with offline capabilities. 
-                            Built with React Native and Firebase for real-time synchronization.
+                            Built a knowledge-base system for detecting suspicious activities and preventing fraudsters 
+                            from abusing the platform. Implemented both batch and real-time pipelines for fraud detection.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">React Native</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Redux</span>
-                            <span class="tech-tag">Expo</span>
+                            <span class="tech-tag">BigQuery</span>
+                            <span class="tech-tag">DBT</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">ML</span>
+                            <span class="tech-tag">Analytics</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>
-                                Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo
+                                <i class="fas fa-info-circle"></i>
+                                Pathao Limited
                             </a>
                         </div>
                     </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Camera Model Identification</h3>
+                        <p class="project-description">
+                            Research project on digital image forensics using Convolutional Neural Networks. 
+                            Developed DenseNet-based approach for camera model identification and post-processing detection.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">CNN</span>
+                            <span class="tech-tag">DenseNet</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://scholar.google.de/citations?user=4UmdvYcAAAAJ&hl=en" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                                Research Paper
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-content">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>BS in Electrical and Electronic Engineering</h3>
+                        <span class="education-year">2018</span>
+                    </div>
+                    <div class="education-details">
+                        <p class="education-institution">Bangladesh University of Engineering & Technology (BUET)</p>
+                        <p class="education-major">Major: Communication | Minor: Electronics</p>
+                        <p class="education-gpa">GPA: 3.35 on a scale of 4.00</p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Higher Secondary Certificate</h3>
+                        <span class="education-year">2013</span>
+                    </div>
+                    <div class="education-details">
+                        <p class="education-institution">Ananda Mohan College, Mymensingh, Bangladesh</p>
+                        <p class="education-gpa">GPA: 5.00 on a scale of 5.00</p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Secondary School Certificate</h3>
+                        <span class="education-year">2011</span>
+                    </div>
+                    <div class="education-details">
+                        <p class="education-institution">Premier Ideal High School, Mymensingh, Bangladesh</p>
+                        <p class="education-gpa">GPA: 5.00 on a scale of 5.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <div class="container">
+            <h2 class="section-title">Research & Publications</h2>
+            <div class="research-content">
+                <div class="research-item">
+                    <h3>Research Experience</h3>
+                    <ul class="research-list">
+                        <li><strong>Camera Model Identification for Digital Image Forensics Using CNN</strong><br>
+                            Conducted thesis research under Dr. Md. Kamrul Hasan, Professor, Department of EEE, BUET</li>
+                        <li><strong>Lung Tumor Segmentation from CT Scan</strong><br>
+                            Research under Dr. Md. Kamrul Hasan, Professor, Department of EEE, BUET</li>
+                        <li><strong>Vital-Sign Detection from Noisy PPG Signals</strong><br>
+                            Research under Dr. Md. Kamrul Hasan, Professor, Department of EEE, BUET</li>
+                    </ul>
+                </div>
+                
+                <div class="research-item">
+                    <h3>Publications</h3>
+                    <div class="publication-list">
+                        <div class="publication-item">
+                            <p><strong>Application of DenseNet in Camera Model Identification and Post-processing Detection</strong></p>
+                            <p>Uday Kamal, Abdul Muntakim Rafi, <strong>Rakibul Hoque</strong>, Sowmitra Das, Abid Abrar and Md. Kamrul Hasan</p>
+                            <p><em>arXiv:1809.00576 [eess], Sep. 2018</em></p>
+                        </div>
+                        <div class="publication-item">
+                            <p><strong>Lung Cancer Tumor Region Segmentation Using Recurrent 3D-DenseUNet</strong></p>
+                            <p>Uday Kamal, Abdul Muntakim Rafi, <strong>Rakibul Hoque</strong> and Md. Kamrul Hasan</p>
+                            <p><em>arXiv:1812.01951 [eess], Dec. 2018</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="research-item">
+                    <h3>Awards & Recognition</h3>
+                    <ul class="awards-list">
+                        <li>First Runner-Up, 2018 IEEE VIP Cup Competition</li>
+                        <li>Regional Champion, Bangladesh Mathematical Olympiad, Higher Secondary Category, 2013</li>
+                        <li>Regional Champion, Bangladesh Mathematical Olympiad, Secondary School Category, 2011</li>
+                        <li>Junior Education Board Scholarship, 2009-2010</li>
+                        <li>Primary Education Board Scholarship, 2006-2008</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -1042,7 +1317,19 @@
                     
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Available for Remote Work</span>
+                        <span>Dhaka, Bangladesh</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(+880)-1672868711</span>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <a href="https://scholar.google.de/citations?user=4UmdvYcAAAAJ&hl=en" target="_blank" style="color: var(--text-secondary); text-decoration: none;">
+                            Google Scholar Profile
+                        </a>
                     </div>
                 </div>
                 
